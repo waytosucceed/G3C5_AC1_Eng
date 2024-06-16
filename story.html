@@ -1,0 +1,212 @@
+<html>
+    <head> <title>Class Activity 1</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <link rel="icon" type="image/x-icon" href="Logo.png">
+      
+        <style>
+
+            #storydiv { 
+                height: 100%;
+                position: relative;         
+              }
+                      
+            #storydiv p {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+            
+            .maindiv{
+                border:5px ridge rgb(12, 96, 206);
+                margin:1%;
+                border-radius:20px
+            }
+
+            p{
+                font-size:30px;
+              
+                font-weight: bold;
+            }
+
+           
+
+            #nextbtn, #backbtn, #newbtn{
+                width: 25%;
+                font-size:20px;
+                margin-right: 5%;
+                position: relative;
+                
+            }
+
+            #backbtn, #newbtn{
+                display:none;
+            }
+
+            #family{
+                width:95%;
+                height:95%;
+            }
+
+            #about{
+                font-weight: bold;
+                font-size:40px;
+                color:rgb(7, 7, 89)
+            }
+
+            #story{ 
+                font-size: 1.28vw;
+                border-radius: 20px;
+            }
+
+            #imgdiv{
+                position:relative;
+            }
+         
+        
+        </style>
+</head>
+
+    <body> 
+        <div class="header" style="width:100%; box-shadow:5px 5px 10px rgb(0, 0, 0); padding-bottom:10px;">
+            <img src="Logo.png" width="5%" style="float:left; margin-top:25px;" class="img-responsive">
+            <span> <img src="header.png" width="30%" height="100px" class="img-responsive"></span>
+        </div>
+         <br>
+        <br>
+        
+        <center>
+            <div>
+            <h2 id="about">Pronouns</h2>
+        </div>
+          
+         <div class="maindiv container-fluid" style="height:60%;">
+            <center>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-11 imgdiv">
+                <img id="family" src="2.jpg" style="width:100%;"> 
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-11" id='storydiv'>
+                <p id="story" style="text-align:left; width:100%;">
+              
+                 
+                    
+                    In our last class, we learnt <span style="color: blueviolet;font-style: italic;"> Pronouns </span> are words that take the place of nouns. They help us avoid repeating the same nouns over and over again. <br><br>
+                    <span style="background-color: yellow;color: blue;"> For example</span>: He, She, I, My, Me, We, Mine, They, Them, etc.  
+
+                    <br><br>
+
+                    Today we will learn more types of pronouns while reading the other half of the story.
+
+
+                    
+                    
+                  
+       
+                           
+                </p>       
+            </div>
+        </center>
+        </div>
+        <br>
+        <button id="backbtn" onclick="backpic()" class="btn btn-success">Back</button>
+        <button id="nextbtn" onclick="update()" class="btn btn-success">Continue</button>
+        <button id="newbtn" onclick="newpage()" class="btn btn-success">Next</button>
+       
+       
+
+
+        </center>   
+
+        <script>
+
+            var images = ["Assests/1.jpg", "Assests/2.jpg", "Assests/3.jpg", "Assests/4.jpg", "Assests/5.jpg", "Assests/6.jpg", "Assests/7.jpg", "Assests/8.jpg", "Assests/9.jpg", "Assests/10.jpg", "Assests/11.jpg", "Assests/12.jpg"];
+            var para=["As they approached the Great Watering Hole, they spotted a friendly elephant named Ellie, who was gracefully sipping water with her long trunk. Excitedly, Tessa and Toby approached Ellie, hoping to join the fun themselves. The three friends splashed around in the water, creating a mini-jungle pool party. ",
+
+                       "The friends didn't hope someone else would join the fun, they hoped to join in the fun themselves. <br><br>Here the word “ <span style='font-weight: bolder;'>themselves</span>” is used as a reflexive pronoun.<br><br>So the reflexive pronoun ' <span style='color:blue;font-style:italic;'>themselves</span>' is used because the subject (Tessa and Toby) did something to themselves.",
+
+                       "A reflexive pronoun is   <span style='color: red;font-style:italic;'> singular </span> if it refers to exactly one person or thing.<br> <u>  <span style='color: blue;'> For example</span></u>: <li>myself </li><li>yourself</li><li>herself</li><li>himself</li><li>itself</li><br>A reflexive pronoun is   <span style='color: red;font-style:italic;'> plural </span> if it refers to more than one person or thing.<br>  <u> <span style='color: blue;'> For example</span></u>:<li>ourselves</li><li>yourselves</li><li>themselves</li>",
+
+                       "In the sentence <br><br>“<span style='color: blue;'>Excitedly, Tessa and Toby approached Ellie, hoping to join in the fun themselves,</span>” <br>the reflexive pronoun is singular or plural? <br><br>",
+                       "In the sentence <br><br>“<span style='color: blue;'>Excitedly, Tessa and Toby approached Ellie, hoping to join in the fun themselves,</span>”<br> <br> The reflexive pronoun is plural because we used the word “<span style='color: blueviolet;font-style:italic;'>themselves</span>” and not “themself”.<br><br>Let us now move ahead in our story and find out the adventure of these two baby tigers……",
+                       "Suddenly, a mischievous monkey named Max swung down from the trees and playfully snatched Tessa’s tail. Everyone thought, who snatched Tessa’s tail? Laughter echoed through the jungle as Tessa tried to catch the cheeky monkey, with Toby joining in the chase. The Great Watering Hole turned into a lively playground, filled with the joyous sounds of baby tigers and a mischievous monkey.",
+
+                       "An <span style='color: blueviolet;'> interrogative pronoun </span> is a pronoun used to ask a question. As in this sentence also, there is a form of question regarding <br> <span style='color: blue;font-style:italic;'> “Who snatched Tessa’s tail?”</span><br><br>Interrogative pronouns are:: <br><li>who</li><li>whom</li><li>whose</li><li>what</li><li>which</li><br>An interrogative phrase always ends with a question mark (?), and an interrogative pronoun often appears as the first word in the sentence.",
+
+                       "One more important thing to be remembered:<br><br><u>The interrogative pronouns</u>: “<span style='color: blue;'>who</span>, <span style='color: blue;'>whom</span> and <span style='color: blue;'>whose</span>” refer only to people.<br><u>The interrogative pronouns</u>: “<span style='color: blue;'>what</span> and <span style='color: blue;'>which</span>” can refer to things/objects or people.<br><br><span style='background-color:Yellow;color:blue;'>For example</span>:<br>What do you prefer? Pizza or Burger? (Referring to an <span style='color: blueviolet;'> object</span>)<br>What is your name? (Referring to a <span style='color: blueviolet;'> person</span>)<br><br>Which is your favourite song? (Referring to an <span style='color: blueviolet;'> object</span>)<br>Which one of you did not do your homework? (Referring to a <span style='color: blueviolet;'> person</span>)",
+
+                       "As the sun began to set, the jungle animals bid farewell to their playful day. Tessa and Toby, who were tired but happy, curled up together under the shade of a giant tree. The jungle was filled with the soothing sounds of crickets, and the mischievous duo fell into a deep slumber, dreaming of more adventures to come.",
+
+                       "In our previous discussion of “<span style='color: blueviolet;'>interrogative pronouns</span>”, we learned about the pronoun “who” as an interrogative pronoun. But there, the pronoun “who” was used to ask a question.<br><br>In this sentence also, “<span style='color: blue;font-style:italic;'>who</span>” is acting as a pronoun but of a different type. It is a relative pronoun.",
+
+                       "So 'who' is referring back to and describing 'Tessa and Toby' by providing extra details about them - “that they were tired but happy.<br><br>”Without this relative clause, the sentence would just be:<br> '<span style='color: blue;font-style:italic;'>Tessa and Toby curled up together under the shade of a giant tree.</span>'<br><br>By adding 'who was tired but happy' with the relative pronoun '<span style='font-weight:bolder;color:blueviolet;'>who</span>', we get more detailed information about Tessa and Toby's state or condition.<br><u>Examples of Relative pronouns</u>:<br><li>who</li><li>whom</li><li>whose</li><li>that</li><li>which</li>",
+                    ]
+
+            
+            
+            var i = -1;
+            function update(){
+                i++
+                document.getElementById("backbtn").style.display="inline-block"
+                if(i > para.length-1){
+                    document.getElementById("nextbtn").style.display="none"
+                    document.getElementById("newbtn").style.display="inline-block"
+                    document.getElementById("family").src = "last.jpg";
+                    document.getElementById("story").style.fontSize="18px"
+                    document.getElementById("story").style.borderLeftStyle="solid"
+                    document.getElementById("story").style.borderLeftColor="rgb(164, 246, 229)"
+                    document.getElementById("about").innerHTML = "Tessa & Toby the Baby Tigers";
+                    document.getElementById("story").innerHTML = "<img src='last part.jpg' style='width: 100%;'  alt=''>";
+                }
+                else{
+                    document.getElementById("story").style.fontSize="1.25vw"
+                    document.getElementById("story").style.backgroundColor="white"
+                    document.getElementById("about").innerHTML="Tessa & Toby the Baby Tigers"
+                     var updated_image = images[i]; 
+                var newpara =para[i];
+                document.getElementById("family").src = updated_image;
+                document.getElementById("story").innerHTML = newpara;
+              
+            }
+            };
+
+            function newpage(){
+                window.location="ac2.html"
+            }
+
+            function backpic(){
+                i=i-1
+                console.log(i)
+
+                if(i<0){
+                    document.getElementById("story").style.fontSize="1.25vw"
+                   // document.getElementById("story").style.backgroundColor="lightblue"
+                    document.getElementById("backbtn").style.display="none"
+                    document.getElementById("nextbtn").style.display="inline-block"
+                    document.getElementById("family").src = "2.jpg";
+                    document.getElementById("about").innerHTML="Pronouns"
+                    document.getElementById("story").innerHTML = 'In our last class, we learnt <span style="color: blueviolet;font-style: italic;"> Pronouns </span> are words that take the place of nouns. They help us avoid repeating the same nouns over and over again. <br><br> <span style="background-color: yellow;color: blue;"> For example</span>: He, She, I, My, Me, We, Mine, They, Them, etc.<br><br>Today we will learn more types of pronouns while reading the other half of the story.'
+                }
+                else{
+                document.getElementById("story").style.fontSize="1.25vw"
+                document.getElementById("story").style.backgroundColor="white"
+                document.getElementById("nextbtn").style.display="inline-block"
+                document.getElementById("about").innerHTML="Tessa & Toby the Baby Tigers"
+                var updated_image = images[i]; 
+                var newpara =para[i];
+                document.getElementById("family").src = updated_image;
+                document.getElementById("story").innerHTML = newpara;
+                }
+            }
+
+    
+    </script>
+        
+    </body>
+</html>
